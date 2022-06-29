@@ -1,0 +1,46 @@
+gef➤  disassemble main
+Dump of assembler code for function main:
+   0x0804929a <+0>:	lea    ecx,[esp+0x4]
+   0x0804929e <+4>:	and    esp,0xfffffff0
+   0x080492a1 <+7>:	push   DWORD PTR [ecx-0x4]
+   0x080492a4 <+10>:	push   ebp
+   0x080492a5 <+11>:	mov    ebp,esp
+   0x080492a7 <+13>:	push   edi
+   0x080492a8 <+14>:	push   ebx
+   0x080492a9 <+15>:	push   ecx
+   0x080492aa <+16>:	sub    esp,0x4c
+   0x080492ad <+19>:	call   0x80490d0 <__x86.get_pc_thunk.bx>
+   0x080492b2 <+24>:	add    ebx,0x2d4e
+   0x080492b8 <+30>:	lea    edx,[ebp-0x40]
+   0x080492bb <+33>:	mov    eax,0x0
+   0x080492c0 <+38>:	mov    ecx,0xa
+   0x080492c5 <+43>:	mov    edi,edx
+   0x080492c7 <+45>:	rep stos DWORD PTR es:[edi],eax
+   0x080492c9 <+47>:	mov    DWORD PTR [ebp-0x4a],0x0
+   0x080492d0 <+54>:	mov    DWORD PTR [ebp-0x46],0x0
+   0x080492d7 <+61>:	mov    WORD PTR [ebp-0x42],0x0
+   0x080492dd <+67>:	sub    esp,0xc
+   0x080492e0 <+70>:	lea    eax,[ebp-0x4a]
+   0x080492e3 <+73>:	push   eax
+   0x080492e4 <+74>:	call   0x8049030 <gets@plt>
+   0x080492e9 <+79>:	add    esp,0x10
+   0x080492ec <+82>:	mov    eax,DWORD PTR [ebp-0x40]
+   0x080492ef <+85>:	cmp    eax,0x539
+   0x080492f4 <+90>:	je     0x8049300 <main+102>
+   0x080492f6 <+92>:	sub    esp,0xc
+   0x080492f9 <+95>:	push   0x1
+   0x080492fb <+97>:	call   0x8049050 <exit@plt>
+   0x08049300 <+102>:	sub    esp,0xc
+   0x08049303 <+105>:	lea    eax,[ebx-0x1f87]
+   0x08049309 <+111>:	push   eax
+   0x0804930a <+112>:	call   0x8049040 <puts@plt>
+   0x0804930f <+117>:	add    esp,0x10
+   0x08049312 <+120>:	mov    eax,0x0
+   0x08049317 <+125>:	lea    esp,[ebp-0xc]
+   0x0804931a <+128>:	pop    ecx
+   0x0804931b <+129>:	pop    ebx
+   0x0804931c <+130>:	pop    edi
+   0x0804931d <+131>:	pop    ebp
+   0x0804931e <+132>:	lea    esp,[ecx-0x4]
+   0x08049321 <+135>:	ret    
+
